@@ -1,0 +1,206 @@
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url("images/customize-hero-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+
+body {
+    background-color:  	#F5F1E6;
+
+}
+
+h1 {
+    font-family: 'BioRhyme', serif;
+    text-emphasis: bold;
+}
+h3 {
+    font-family: 'BioRhyme', serif;
+
+}
+h4 {
+    font-family: 'BioRhyme', serif;
+}
+h5 {
+    font-family: 'BioRhyme', serif;
+    color: grey;
+}
+
+.card-title {
+    color: black;
+    font-family: 'BioRhyme', serif;
+}
+#bars{
+    color: white;
+    
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-custom {
+    background-color: black !important;
+    text-decoration: none;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+}
+#veg-logo {
+    margin: -10px;
+    padding-top: -15px;
+    height: 70px;
+    width: 140px;
+
+    padding-bottom: 35px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent !important;
+  }
+
+  .card {
+      border-color: green;
+  }
+  .btn {
+    border-radius: 50%;
+    background-color: #929E48;
+    color: white;
+}
+
+.progress-bar.progress-bar-green{
+    width: 0%;
+    text-align: right;
+    background:  #929E48;
+}
+
+#hero-image {
+    background-image: url("images/customize-hero-bg.jpg");
+
+
+    min-height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+#cp-link {
+    text-decoration: none;
+    color: grey;
+
+}
+
+#customize-link {
+    text-decoration: none;
+    color: black;
+    text-emphasis: bold;
+}
+
+#bd-link {
+    text-decoration: none;
+    color: grey;
+}
+#select-products-text {
+    color: #929E48;
+    font-weight: normal;
+}
+
+.item-counter {
+    display: inline;
+}
+
+.card {
+    border: 1px solid;
+    border-color: #929E48;
+    
+}
+
+#login-item {
+    color: grey;
+}
+#cart-item {
+    color: grey !important;
+    font-size: 14px;
+    
+    
+}
+.icon-bar{
+    color: white !important;
+}
+
+#fruit-pic{
+    width: 130px;
+    height: 130px;
+    padding-top: -15px;
+    margin-top: -15px;
+}
+
+#greens-pic{
+    width: 130px;
+    height: 130px;
+    padding-top: -15px;
+    margin-top: -15px;
+}
+#roots-pic{
+    width: 130px;
+    height: 130px;
+    padding-top: -15px;
+    margin-top: -15px;
+}
+#sprouts-pic{
+    width: 130px;
+    height: 130px;
+    padding-top: -15px;
+    margin-top: -15px;
+}
+
+nav-row p {
+    display: inline-block;
+}
+
+#myNavbar a li ul{
+    display: inline-block;
+}
+
+.card-img-left {
+    border-bottom-left-radius: calc(.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
+    float: left;
+    padding-right: 1em;
+    margin-bottom: -1.25em;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+  }

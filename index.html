@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+         crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+         crossorigin="anonymous">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+         crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+      <script type="text/javascript" src="myfunctions.js"></script>
+      <title>Build Your Plan</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-fixed-top navbar-custom" id="navBBB">
+         <div class="container">
+            <a class="navbar-brand navbar-left" href="#"><img id="veg-logo" src="images/veggiebox-logo.png"></a>
+            <a class="navbar-brand pull-right" href="#" id="cart-item">Cart <i class="fas fa-shopping-basket"></i></a>
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <i class="fas fa-bars" id="bars"></i>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item"><a href="#">Get Started</a></li>
+                  <li class="nav-item"><a href="#">About Us</a></li>
+                  <li class="nav-item"><a href="#">Where We Deliver</a></li>
+                  <li class="nav-item"><a href="#">Our Producers</a></li>
+                  <li class="nav-item"><a href="#" id="login-item">Log In &nbsp;</a></li>
+               </ul>
+            </div>
+         </div>
+         </div>
+      </nav>
+      <header class="masthead text-center text-white">
+         <div class="masthead-content">
+            <div class="container">
+               <h1 class="masthead-heading mb-0"><img class="img-fluid" src="images/customize-hero-text.png">
+               </h1>
+            </div>
+         </div>
+      </header>
+      <div class="container">
+         <div class="container">
+            <div class="row">
+               <h5>
+                  <a href="#" id="cp-link">Choose Your Plan</a> >
+                  <a href="#" id="customize-link">Customize</a> >
+                  <a href="#" id="bd-link">Billing & Delivery</a>
+               </h5>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <h1 class="col text-center">Build Your Plan</h1>
+            <h3 class="col text-center" id="select-products-text">Select 6 Products</h3>
+         </div>
+      </div>
+      <div class="container">
+         <div class="container">
+            <div class="container">
+               <div class="container">
+                  <div class="row">
+                     <div class="progress">
+                        <div class="progress-bar progress-bar-green" id="prog-bar" role="progressbar" aria-valuenow="0"
+                           aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-5">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="card-img-left" id="fruit-pic" src="images/fruitpic.png">
+                     <h4 id="card-title"> Fruits</h4>
+                     <p id="card-body"> Okay, so fruits aren't vegetables. Everyone
+                        gets confused sometimes.
+                     </p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="subItemFruit();"><i class="fas fa-minus"></i></a>
+                     <p class="item-counter" id="item-counter-fruit">0</p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="addItemFruit();"><i class="fas fa-plus"></i></a>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            &nbsp;
+            <div class="col-sm-5">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="card-img-left" id="greens-pic" src="images/greenspic.png">
+                     <h4 id="card-title"> Greens</h4>
+                     <p id="card-body"> Make salad bases, or add a leafy crunch to sandwhiches.</p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="subItemGreens();"><i class="fas fa-minus"></i></a>
+                     <p class="item-counter" id="item-counter-greens">0</p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="addItemGreens();"><i class="fas fa-plus"></i></a>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+         </div>
+         &nbsp;
+         <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-5">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="card-img-left" id="roots-pic" src="images/rootspic.png">
+                     <h4 class="card-title">Roots & Stems</h4>
+                     <p class="card-text">Sweet and/or savoury, roots add substance to a dish.
+                     </p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="subItemRoots();"><i class="fas fa-minus"></i></a>
+                     <p class="item-counter" id="item-counter-roots">0</p>
+                     <a href="javascript:void()" class="btn  btn-xs" onclick="addItemRoots();"><i class="fas fa-plus"></i></a>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            &nbsp;
+            <div class="col-sm-5">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="card-img-left" id="sprouts-pic" src="images/sproutspic.png">
+                     <h4 id="card-title"> Sprouts & Herbs</h4>
+                     <p id="card-body"> Garlic, chives, dill... add some depth to dishes. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; </p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="subItemSprouts();"><i class="fas fa-minus"></i></a>
+                     <p class="item-counter" id="item-counter-sprouts">0</p>
+                     <a href="javascript:void();" class="btn  btn-xs" onclick="addItemSprouts();"><i class="fas fa-plus"></i></a>
+                    
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+         crossorigin="anonymous"></script>
+   </body>
+</html>
